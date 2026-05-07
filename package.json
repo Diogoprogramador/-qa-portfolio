@@ -1,0 +1,22 @@
+{
+  "name": "qa-automation-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio de testes automatizados - QA Junior",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec 'cypress/e2e/**/*.cy.js'"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  },
+  "keywords": [
+    "qa",
+    "testing",
+    "cypress",
+    "automation",
+    "e2e"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT"
+}
