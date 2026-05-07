@@ -67,6 +67,6 @@ npm run cy:run
 
 ---
 
-**Autor**: Seu Nome  
-**LinkedIn**: [seu-linkedin]  
-**Email**: [seu-email]
+**Autor**: Diogo 
+**LinkedIn**: 
+**Email**:teologodiogo123@gmail.com
