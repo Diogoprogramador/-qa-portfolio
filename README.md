@@ -68,5 +68,5 @@ npm run cy:run
 ---
 
 **Autor**: Diogo 
-**LinkedIn**: 
-**Email**:teologodiogo123@gmail.com
+**LinkedIn**: https://www.linkedin.com/in/diogo-nascimento-399576314/
+**Email**: teologodiogo123@gmail.com
