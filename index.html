@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diogo | QA Automation Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <span class="header__logo-icon">🧪</span>
+        <span class="header__logo-text">Diogo<span class="accent">QA</span></span>
+      </a>
+      <button class="header__menu-btn" id="menuBtn" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav" id="navMenu">
+        <a href="#sobre" class="header__link">Sobre</a>
+        <a href="#skills" class="header__link">Skills</a>
+        <a href="#projetos" class="header__link">Projetos</a>
+        <a href="#testes" class="header__link">Testes</a>
+        <a href="#contato" class="header__link btn btn--nav">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__tag">Quality Assurance Engineer</p>
+        <h1 class="hero__title">
+          Garantindo a <span class="accent">qualidade</span> do software com testes automatizados
+        </h1>
+        <p class="hero__description">
+          Especializado em automação de testes E2E com Cypress, criando suítes de teste robustas
+          para garantir que aplicações web funcionem perfeitamente.
+        </p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn--outline">Entrar em Contato</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__code-block">
+          <div class="code-header">
+            <span class="code-dot code-dot--red"></span>
+            <span class="code-dot code-dot--yellow"></span>
+            <span class="code-dot code-dot--green"></span>
+            <span class="code-filename">login.cy.js</span>
+          </div>
+          <pre class="code-content"><code><span class="code-keyword">describe</span>(<span class="code-string">'Login'</span>, () => {
+  <span class="code-keyword">it</span>(<span class="code-string">'should login successfully'</span>, () => {
+    cy.<span class="code-method">visit</span>(<span class="code-string">'/login'</span>)
+    cy.<span class="code-method">get</span>(<span class="code-string">'#user'</span>)
+      .<span class="code-method">type</span>(<span class="code-string">'standard_user'</span>)
+    cy.<span class="code-method">get</span>(<span class="code-string">'#pass'</span>)
+      .<span class="code-method">type</span>(<span class="code-string">'secret_sauce'</span>)
+    cy.<span class="code-method">get</span>(<span class="code-string">'#login-btn'</span>)
+      .<span class="code-method">click</span>()
+    cy.<span class="code-method">url</span>()
+      .<span class="code-method">should</span>(<span class="code-string">'include'</span>, <span class="code-string">'/inventory'</span>)
+  })
+})</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Section -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section__title">Sobre Mim</h2>
+      <p class="section__subtitle">Profissional de Quality Assurance focado em automação</p>
+      <div class="about__grid">
+        <div class="about__card">
+          <div class="about__icon">🎯</div>
+          <h3>Foco em Qualidade</h3>
+          <p>Comprometido em garantir que cada funcionalidade funcione como esperado, criando cenários de teste abrangentes.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">🔄</div>
+          <h3>Automação E2E</h3>
+          <p>Experiência em testes end-to-end automatizados, cobrindo fluxos completos do usuário.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">📊</div>
+          <h3>Análise de Dados</h3>
+          <p>Habilidade em análise de dados com Python, Pandas e visualizações interativas com Plotly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <h2 class="section__title">Skills & Tecnologias</h2>
+      <p class="section__subtitle">Ferramentas e tecnologias que utilizo no dia a dia</p>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <div class="skill-card__icon">🌲</div>
+          <h3 class="skill-card__title">Cypress</h3>
+          <p class="skill-card__level">Avançado</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">📜</div>
+          <h3 class="skill-card__title">JavaScript</h3>
+          <p class="skill-card__level">Intermediário</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="width: 75%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🐍</div>
+          <h3 class="skill-card__title">Python</h3>
+          <p class="skill-card__level">Intermediário</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="width: 70%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🟢</div>
+          <h3 class="skill-card__title">Node.js</h3>
+          <p class="skill-card__level">Intermediário</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="width: 65%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🐙</div>
+          <h3 class="skill-card__title">Git & GitHub</h3>
+          <p class="skill-card__level">Avançado</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">🗃️</div>
+          <h3 class="skill-card__title">SQL</h3>
+          <p class="skill-card__level">Intermediário</p>
+          <div class="skill-card__bar"><div class="skill-card__fill" style="width: 70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos Section -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="section__title">Projetos</h2>
+      <p class="section__subtitle">Meus projetos de automação e análise de dados</p>
+      <div class="projects__grid">
+        <div class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__tag">Cypress</span>
+            <span class="project-card__tag project-card__tag--secondary">E2E</span>
+          </div>
+          <h3 class="project-card__title">QA Automation Portfolio</h3>
+          <p class="project-card__desc">
+            Testes automatizados E2E com Cypress para o site SauceDemo, incluindo cenários
+            de login, cadastro e validação de formulários.
+          </p>
+          <ul class="project-card__features">
+            <li>Login com credenciais válidas e inválidas</li>
+            <li>Validação de senha (8+ chars, número, maiúscula)</li>
+            <li>Validação de e-mail e idade</li>
+          </ul>
+          <a href="https://github.com/Diogoprogramador/-qa-portfolio" class="project-card__link" target="_blank" rel="noopener noreferrer">
+            Ver no GitHub &rarr;
+          </a>
+        </div>
+        <div class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__tag">Python</span>
+            <span class="project-card__tag project-card__tag--secondary">Plotly</span>
+          </div>
+          <h3 class="project-card__title">Dashboard Produção Vegetal</h3>
+          <p class="project-card__desc">
+            Dashboard interativo analisando dados de produção extrativa vegetal brasileira
+            (1986-2024) com visualizações Plotly.
+          </p>
+          <ul class="project-card__features">
+            <li>136.969 registros analisados</li>
+            <li>4 gráficos interativos</li>
+            <li>Dados de 3.424 municípios</li>
+          </ul>
+          <a href="https://github.com/Diogoprogramador/dashboard-producao-vegetal-brasil" class="project-card__link" target="_blank" rel="noopener noreferrer">
+            Ver no GitHub &rarr;
+          </a>
+        </div>
+        <div class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__tag">Python</span>
+            <span class="project-card__tag project-card__tag--secondary">QA Framework</span>
+          </div>
+          <h3 class="project-card__title">QA Framework</h3>
+          <p class="project-card__desc">
+            Framework completo para testes automatizados em Python com suporte a testes
+            unitários, integração, performance e relatórios.
+          </p>
+          <ul class="project-card__features">
+            <li>Testes unitários e de integração</li>
+            <li>Relatórios detalhados</li>
+            <li>Testes de performance</li>
+          </ul>
+          <a href="https://github.com/Diogoprogramador/qa-framework" class="project-card__link" target="_blank" rel="noopener noreferrer">
+            Ver no GitHub &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testes Section -->
+  <section class="section section--alt" id="testes">
+    <div class="container">
+      <h2 class="section__title">Casos de Teste</h2>
+      <p class="section__subtitle">Exemplos de cenários de teste do portfólio</p>
+      <div class="tests__grid">
+        <div class="test-card">
+          <h3 class="test-card__title">Login</h3>
+          <p class="test-card__file">login.cy.js</p>
+          <ul class="test-card__list">
+            <li class="test-card__item test-card__item--pass">Login com credenciais válidas</li>
+            <li class="test-card__item test-card__item--fail">Usuário bloqueado</li>
+            <li class="test-card__item test-card__item--fail">Senha incorreta</li>
+            <li class="test-card__item test-card__item--fail">Campos obrigatórios vazios</li>
+            <li class="test-card__item test-card__item--fail">Usuário não existe</li>
+          </ul>
+        </div>
+        <div class="test-card">
+          <h3 class="test-card__title">Validação de Formulário</h3>
+          <p class="test-card__file">cadastro.cy.js</p>
+          <ul class="test-card__list">
+            <li class="test-card__item test-card__item--pass">Validação de senha (8+ chars)</li>
+            <li class="test-card__item test-card__item--pass">Validação de e-mail</li>
+            <li class="test-card__item test-card__item--pass">Validação de idade (+18)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tests__stats">
+        <div class="stat">
+          <span class="stat__number">8</span>
+          <span class="stat__label">Casos de Teste</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">3</span>
+          <span class="stat__label">Cenários Positivos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">5</span>
+          <span class="stat__label">Cenários Negativos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">100%</span>
+          <span class="stat__label">Cobertura</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section class="section" id="contato">
+    <div class="container">
+      <h2 class="section__title">Contato</h2>
+      <p class="section__subtitle">Vamos conversar sobre Quality Assurance!</p>
+      <div class="contact__grid">
+        <a href="mailto:teologodiogo123@gmail.com" class="contact-card">
+          <div class="contact-card__icon">📧</div>
+          <h3 class="contact-card__title">E-mail</h3>
+          <p class="contact-card__value">teologodiogo123@gmail.com</p>
+        </a>
+        <a href="https://www.linkedin.com/in/diogo-nascimento-399576314/" class="contact-card" target="_blank" rel="noopener noreferrer">
+          <div class="contact-card__icon">💼</div>
+          <h3 class="contact-card__title">LinkedIn</h3>
+          <p class="contact-card__value">Diogo Nascimento</p>
+        </a>
+        <a href="https://github.com/Diogoprogramador" class="contact-card" target="_blank" rel="noopener noreferrer">
+          <div class="contact-card__icon">🐙</div>
+          <h3 class="contact-card__title">GitHub</h3>
+          <p class="contact-card__value">@Diogoprogramador</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Diogo — QA Automation Portfolio</p>
+      <p>Feito com dedicação à qualidade de software</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+    const header = document.getElementById('header');
+
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.header__link').forEach(link => {
+      link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
